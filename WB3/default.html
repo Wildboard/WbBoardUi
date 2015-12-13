@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Wildboard</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+    <!-- Bing Map Control references -->
+<script type="text/javascript" src="ms-appx:///Bing.Maps.JavaScript/js/veapicore.js"></script>
+
+    <script type="text/javascript" src="ms-appx:///Bing.Maps.JavaScript/js/veapimodules.js"></script>
+    <script type="text/javascript">
+        function onBodyLoad() {
+            Microsoft.Maps.loadModule('Microsoft.Maps.Map', {
+                callback: mapIt,
+                culture: "en-us",
+                homeRegion: "US"
+            });
+           
+              
+                function mapIt() {
+                    var map;
+
+                    var mapOptions =
+                      {
+                          credentials: "AjhbafCqAHTNxg1RRyrZ1s8WABn16w-CYVR5SBZuGx7iZlO-3-mVcV14P6Bmp9Ag",
+                          center: new Microsoft.Maps.Location(45.5, -122.5),
+                          mapTypeId: Microsoft.Maps.MapTypeId.road,
+                          zoom: 13
+                      }
+
+                    var mapDiv = document.getElementById("mapDiv");
+                    if (mapDiv == null) {
+                        setTimeout(mapIt, 1000);
+                    } else {
+                        map = new Microsoft.Maps.Map(mapDiv, mapOptions);
+                    }
+                }
+
+                
+               
+            }
+        
+       
+      </script>
+        <!-- WB_New references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="js/socket.io.js"></script>
+    <script src="/js/jquery-1.7.1.js"></script>
+    
+    <script src="/js/jquery-ui.js"></script>
+    <script src="/js/jquery.scrollTo.min.js"></script>
+    <script src="/js/trace.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/VASTParser.js"></script>
+    <script src="/js/premium.js"></script>
+  <script src="/js/timeline.js"></script>
+    <script src="/js/timelineScrubber.js"></script> 
+    <script src="/js/flyers.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/loader.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/default.js"></script>
+     <script src="/js/node.js"></script>
+</head>
+<body 
+      >
+
+
+    <div id="templateDiv">
+        <div data-win-bind="className:flyerClass;itemID:id;name:myName;bounds:outOfBounds;displayState:displayState" 
+            id="">
+            <div class="gridSkin" data-win-bind="itemID:id" style="display: block; ">
+                <div style=" margin:12px" data-win-bind="itemID:id">
+                    <div class="textClass" style="pointer-events: none; -ms-touch-action: none;" data-win-bind="itemID:id;innerHTML: title;style.display:displayEntry"></div>
+                    <div class="subtitle" style="pointer-events: none; -ms-touch-action: none;" data-win-bind="itemID:id;innerHTML: subtitle;"></div>
+                    <div class="posted sort_date" style="clear: both; pointer-events: none; -ms-touch-action: none;"
+                         data-win-bind="itemID:id;innerText: posted;sortDate:sort_date"></div>
+                    <div style="color: #8a4c21; pointer-events: none; -ms-touch-action: none; height: auto; width: 100%;" data-win-bind="itemID:id">
+                        <img style="pointer-events: none; -ms-touch-action: none;" 
+                            class="mainImg" 
+                            data-win-bind="itemID:id;src:image;style.display:displayImgP;" src="#" />
+                 
+                     <video id="videoFlyer" width="160" height="120" controls preload="auto" 
+                        data-win-bind="src:embed; style.display:displayVidP; playerID:id" src="#"></video> 
+                    <div id="googleMapFlyer0" 
+                           data-win-bind="style.display:displayGoogleMapP">
+     <div>                
+           <div id='mapDiv' style="width:160px;height:120px;"></div>
+          </div>
+
+                    </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="detailsSkin" data-win-bind="itemID:id" style="display:none;">
+                <!--<div style="width:100px;height:299px;background:#ff0000;" data-win-bind="itemID:id">GOGU</div>-->
+                <div style="margin:12px;" data-win-bind="itemID:id">
+                    <div class="textClass" style="pointer-events: none; -ms-touch-action: none;" data-win-bind="itemID:id;innerHTML: title;style.display:displayEntry"></div>
+                    <div class="subtitle" style="pointer-events: none; -ms-touch-action: none;" data-win-bind="itemID:id;innerHTML: subtitle;"></div>
+                    <div class="posted" style="clear: both; pointer-events: none; -ms-touch-action: none;" data-win-bind="itemID:id;innerText: posted;;sortDate:sort_date"></div>
+                    <div style=" margin-top:20px;">
+                        <div style="float: left; color: #fefefe; pointer-events: none; -ms-touch-action: none; width: 280px; height: auto; float: left;margin-bottom:12px;" data-win-bind="itemID:id">
+                            <div class="detailsText" style="pointer-events: none; -ms-touch-action: none; width: 100%; height: auto;" data-win-bind="itemID:id;innerHTML: description;"></div>
+                            <div class="contactArea" style="clear: both; margin-top: 30px;margin-bottom:12px;">
+                                <img style="pointer-events: none; -ms-touch-action: none; float: left; width: 250px; height: 250px" data-win-bind="itemID:id;src:imageContact" src="#" />
+                                <div style="float: left; width: 150px;margin-left:10px;" data-win-bind="innerHTML:textContact"></div>
+                            </div>
+                        </div>
+                        <div style="float: left; background:#9da1a7;margin-left:10px;margin-bottom:12px;">
+                       
+  <img style="pointer-events: none; -ms-touch-action: none; float: left" class="mainImgVert" data-win-bind="itemID:id;src:image" src="#" />                             </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="templateDivVertical">
+        <div data-win-bind="className: flyerClassVert;itemID: id;name:myName">
+            <div style="margin:12px;">
+            <div class="textClass" style="pointer-events: none; -ms-touch-action: none;" data-win-bind="itemID:id;innerHTML: title;style.display:displayEntry"></div>
+            <div class="subtitle" style="pointer-events: none; -ms-touch-action: none;" data-win-bind="itemID:id;innerHTML: subtitle;"></div>
+            <div class="posted" style="clear: both; pointer-events: none; -ms-touch-action: none;" data-win-bind="itemID:id;innerText: posted;sortDate:sort_date"></div>
+            <div style=" margin-top:20px;">
+			<div style="float: left; color: #fefefe; pointer-events: none; -ms-touch-action: none; width: 330px; height: auto; float: left;margin-bottom:12px;" data-win-bind="itemID:id">
+                <div class="detailsText" style="pointer-events: none; -ms-touch-action: none; width: 100%; height: auto;" data-win-bind="itemID:id;innerHTML: description;"></div>
+                <div class="contactArea" style="clear: both; margin-top: 30px;margin-bottom:12px;">
+                    <img style="pointer-events: none; -ms-touch-action: none; float: left; width: 250px; height: 250px;" data-win-bind="itemID:id;src:imageContact" src="#" />
+                    <div style="float: left; width: 150px;margin-left:10px;" data-win-bind="innerHTML:textContact"></div>
+                </div>
+            </div>
+            <div style="float: left; background:#9da1a7;margin-left:10px;margin-bottom:12px;">
+                <img style="pointer-events: none; -ms-touch-action: none; float: left" class="mainImgVert" data-win-bind="itemID:id;src:image" src="#" />
+            </div>
+			</div>
+            </div>
+
+        </div>
+    </div>
+    <div id="templateDivTimelineDate">
+        <div data-win-bind="itemID:id;innerText:sort_date;sortDate:sort_date" class="dates" style="height: 90px; line-height: 90px;"></div>
+    </div>
+
+    
+    <div id="templatePremiumLinear">
+        <div class="premiumLinear">
+            <div >
+                <!--<div style="color: #808080" data-win-bind="innerText:time;style.background:time Premium.durationChangeColor"></div>-->
+                <div style="margin-left: 30px; margin-top: 30px;width:600px;">
+                    <video id="videoPlayerId" width="600" height="400" controls preload="auto"
+                         data-win-bind="src:mediaFileMP4" src="#"></video>
+                </div>
+                <div class="companionAds" style="margin-left: 30px; margin-top:30px;width:630px;"></div>
+            </div>
+        </div>
+        
+    </div>
+	<div class="topArea"><div style="background-color:#f1c40f;width:100%;height:40px; text-indent: 200px;"><div style="line-height:40px;">WELCOME TO OUR INTERACTIVE COMMUNITY BOARD</div></div></div>
+    <div class="menuArea" id="menuArea" style="left: 0px; top: 0px; display: block;">
+   
+        <div class="menu searchAll">
+            <div class="menuBG" style="background: #e74c3c; border-radius: 10px 10px 10px 10px;">
+                <div class="menuContent">
+                    <img src="./images/nav_all.png">
+                    <div>View All</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu events">
+            <div class="menuBG" style="background: #e17b21; border-radius: 10px 10px 10px 10px;">
+                <div class="menuContent">
+                    <img src="./images/nav_events.png">
+                    <div>Events</div>
+                </div>
+            </div>
+        </div>
+        <div class="menu forsale">
+            <div class="menuBG" style="background: #f1c40f; border-radius: 10px 10px 10px 10px;">
+                <div class="menuContent">
+                    <img src="./images/nav_forsales.png">
+                    <div>For Sale</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="menu nonprofit">
+            <div class="menuBG" style="background: #27ae60; border-radius: 10px 10px 10px 10px;">
+                <div class="menuContent">
+                    <img src="./images/nav_nonprofit.png">
+                    <div>Non Profit</div>
+                </div>
+            </div>
+
+     
+        </div>
+        <div class="menu services">
+            <div class="menuBG" style="background: #65a1dd; border-radius: 10px 10px 10px 10px;">
+                <div class="menuContent">
+                    <img src="./images/nav_services.png">
+                    <div>Services</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menuSearch" id="menuSearchId0">
+               <div id="searchDivIdNormal" >
+                    <input type="search" id="searchInputId0" name="search" /> 
+                       <!-- <div class="searchBox" id="searchInputId0"
+                          data-win-control="WinJS.UI.SearchBox"
+                            data-win-options="{placeholderText: 'Search',
+                             focusOnKeyboardInput: true}">
+                      </div>
+                          -->
+               
+            </div>
+        </div>
+
+        <div class="menuHelp" id="menuHelpId">
+            <!--  class="menuBG" style=" border-radius: 10px 10px 10px 10px;" -->
+           <div class="helpBG"> 
+                    <img src="./images/help.png" />
+               
+            </div>
+        </div>
+        
+        <div class="menu filler" style="height: 100%"></div>
+    </div>
+
+    <div id="itemAreaId">
+        <div id="container" class="itemArea"></div>
+        <div id="containerVertical" class="itemArea" style="display: none;"></div>
+
+    </div>
+    <div id="timelineView">
+        <div id="timelineScrubber" style="height: 90px; line-height: 90px;">Drag Me</div>
+        <div id="timelineDates"></div>
+    </div>
+    <div id="premium">
+    </div>
+    <!-- Step 21. -->
+
+    <div id="nodeColors">
+        
+<img 
+     style="display:none;"
+     src="./images/arrowdown.png" align="center"
+     width='200' height='200' 
+     id="downArrowIcon">
+<!--
+        <div class="red" style="display:none">Drag here</div>
+        <div class="orange" style="display:none">Drag here</div>
+        <div class="yellow" style="display:none">Drag here</div>
+        <div class="green" style="display:none">Drag here</div>
+         <div class="blue" style="display:none">Drag here</div>
+         <div class="purple" style="display:none">Drag here</div>
+-->
+</div>
+
+    <div id="helpDivId" style="display: none; width: 400px; height: 400px; background: black; z-index:300; ">
+            <div style="padding: 20px;"><p>
+                Welcome to Wildboard, your community's interactive digital bulletin board. 
+                </p><p>
+                To post an ad or drag an ad to your phone, scan the code below to get our app:
+               </p>
+                <img src="./images/qrcode.png" />
+            </div>
+        </div>
+          
+       <div id="searchDivIdTop" >
+            
+        </div>
+</body</html>

@@ -1,0 +1,406 @@
+body {
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
+
+body {
+   background:#ffffff;
+}
+.topArea{
+	height:48px;
+	font-family:'Myriad web pro';
+	font-weight:bold;
+	font-size:18pt;
+	color:#866c02;
+	background-color: #ffffff;
+   
+}
+
+#timelineView {
+    position:absolute;
+    top:0px;
+    right:670px;
+    height:100%;
+    width:90px;
+    background:rgba(66,74,85,1);
+    z-index:100;
+}
+
+
+.menuArea{
+	position:relative;
+	width:150px;
+	height:100%;
+	float:left;
+    background-color: rgba(50,58,69,1);
+}
+
+.menu {
+	height:150px;
+	width:150px;
+	font-family: 'Myriad Pro';
+    font-size:14pt;
+    background-color: rgba(50,58,69,1);
+}
+
+
+
+.menuHelp {
+    margin-top: 1px;
+	height:150px;
+	width:150px;
+	font-family: 'Myriad Pro';
+    font-size:14pt;
+    background-color: rgba(50,58,69,1);
+   top: 1px;
+    padding-top: 1px;
+}
+
+
+.helpBG {
+    height: 100px;
+    width: 100px;
+    text-align: center; 
+    position: relative;
+    left:25px;
+    top: 1px;
+    padding-top: 1px;
+}
+
+.menuSearch {
+    margin-top: 0px;
+    margin-bottom: 0px;
+	height:150px;
+	width:150px;
+	font-family: 'Myriad Pro';
+    font-size:14pt;
+    background-color: rgba(50,58,69,1);
+}
+
+#searchInputId0 {
+    position: fixed;
+    z-index: 99999;
+    margin-left: 1px;
+    margin-right: 1px;
+    left: 2px;
+    width: 100px;
+    top: 813px;
+
+}
+
+.searchBG {
+	height: 100px;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    left:25px;
+    top: 10px;
+}
+
+.menuBG {
+	height: 100px;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    left:25px;
+    top: 10px;
+}
+
+#searchDivIdTop {
+    position: fixed;
+    left: 600px;
+    top: 600px;
+}
+
+#menuSearchId0 {
+}
+
+#searchInputId0 {
+  background: white url("/images/search.png") left no-repeat;
+  padding-left: 17px;
+}
+
+
+.menuContent{
+	position:relative;
+	top: 15px;
+}
+
+
+.companionAds {
+    height:100%;
+    width:600px;
+   
+}
+.companion {
+   padding-bottom:50px;
+}
+.premiumLinear {
+    
+}
+#premium {
+    position:absolute;
+	overflow-x:scroll;
+	overflow-y:scroll;
+    float:left;
+ 	width:660px;
+	height:100%;
+	right:0px;
+	 z-index:100;
+    background:rgba(0,0,0,0.6);
+    
+}
+#timelineDates {
+    overflow-y:scroll;
+    height:100%;
+    width:100%;
+    
+	float:left;
+    -ms-touch-action:none;
+	
+}
+#timelineDates .dates  {
+    text-align:center;
+    font-size:10px;
+    /*background:url() no-repeat;*/    
+}
+#timelineDates .selected{
+    background:url("/images/button_vert_scroll.png") no-repeat;    
+}
+#timelineScrubber {
+    position:absolute;
+   left:-15px;
+    background:url("/images/button_vert_scroll.png") no-repeat;
+    width:115px;
+    height:89px;
+    text-align:center;
+    font-size:10px;
+    transform-origin: 0% 0%;
+    -ms-touch-action: none;
+	z-index:300;
+}
+#container {
+    
+    
+	/*column-count:3;
+	column-gap:10px;*/
+	/*margin:0 auto;*/
+	/*width:100%;*/
+	height:100%;
+    
+	/*background:#555555;*/
+}
+
+.itemArea{
+	/*border: 1px solid #cccccc;*/
+	position:absolute;
+	overflow-x:scroll;
+	overflow-y:scroll;
+    
+	float:left;
+	width:100%;
+	height:100%;
+	left:130px;
+	background: #ffffff;
+}
+
+
+#container .flyer{
+    font-family:'myriad pro';
+    position:absolute;
+    float:left;
+
+	/*height:auto;*/
+	/*width:100% !important;*/
+    width:350px;
+	max-width:350px;
+    top:10px;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-size: auto;
+    background-attachment: scroll;
+    background-color: #717780;
+	/*background:#c69e3e;*/
+   
+    overflow:auto;
+    transform-origin: 0% 0%;
+    -ms-touch-action: none;
+    
+    
+    /*transform-duration: 1s;*/
+}
+.detailsSkin {
+    font-family:'myriad pro';
+    
+	/*height:auto;*/
+	/*width:100% !important;*/
+    width:700px;
+	max-width:700px;
+    top:10px;
+	background-color: #717780;
+	
+}
+
+.gridSkin {
+    background-color: #717780;
+    width:300px;
+	max-width:300px;
+}
+
+#containerVertical .flyer{
+    font-family:'myriad pro';
+    position:absolute;
+    float:left;
+
+	/*height:auto;*/
+	/*width:100% !important;*/
+    width:700px;
+	max-width:700px;
+   
+    
+    top:10px;
+	background-color: #717780;
+	overflow:auto;
+    transform-origin: 0% 0%;
+    -ms-touch-action: none;
+    
+    
+    /*transform-duration: 1s;*/
+}
+.textClass {
+	
+	font-size:14pt;
+    color:#ffffff;
+    font-weight:bold;
+    text-decoration:underline;
+}
+.subtitle{
+    color:#ffffff;
+    font-style:italic;
+    font-size:12px;
+}
+.posted {
+    color:#cfcfcf;
+    font-style:italic;
+    font-size:10px;
+}
+.detailsText {
+    color:#ffffff;
+   font-size:12px;
+}
+.contactArea {
+    color:#ffffff;
+	font-size:12px;
+}
+.mainImg{
+    width:100%;
+    max-width:280px;
+    height:auto;
+	 margin-top:8px;
+}
+.mainImgVert{
+    width:310px;
+    max-width:310px;
+     height:auto;
+	margin:10px;
+}
+#gogu2{
+	width:80px;
+	height:150px;
+	background:brown;
+}
+
+#nodeColors {
+  position: absolute;
+  bottom: 1px;
+  left: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index:99999999
+}
+
+#nodeColors .red {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 150px solid red;
+    margin-bottom: 30px;
+}
+
+#nodeColors .redx {
+    width:300px;
+    height:10px;
+    position:relative;
+    background-color:red;
+    float:left;
+    margin-left:50px;
+}
+
+#nodeColors .orange {
+    width:300px;
+    height:10px;
+    position:relative;
+    background-color:orange;
+    float:left;
+    margin-left:50px;
+}
+
+
+    #nodeColors .yellow {
+        display: inline;
+        width: 300px;
+        height: 10px;
+        position: relative;
+        background-color: yellow;
+        float: left;
+        margin-left: 50px;
+    }
+
+    
+#nodeColors .green {
+    display:inline;
+    width:300px;
+    height:10px;
+    position:relative;
+    background-color:green;
+    float:left;
+    margin-left:50px;
+   
+}
+
+#nodeColors .blue {
+    display:inline;
+    width:300px;
+    height:10px;
+    position:relative;
+    background-color:blue;
+    float:left;
+    margin-left:50px;
+   
+}
+
+#nodeColors .purple {
+    display:inline;
+    width:300px;
+    height:10px;
+    position:relative;
+    background-color:purple;
+    float:left;
+    margin-left:50px;
+   
+}
+
+

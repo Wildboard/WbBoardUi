@@ -1,0 +1,322 @@
+{ 
+"feed_start_date" : "2013-06-16",
+"feed_end_date"   : "2013-06-25",
+"inventory_start_date" : "2013-06-16",
+"inventory_end_date"   : "2013-06-25",
+
+"flyers" : 
+[
+ {
+  "id"         : "1",
+  "category"   : ["events"], 
+  "sticky"     : 0,
+  "titleArea"  : { 
+     "title"    :  "NorCal Auto Swap Meet",
+     "subtitle" : [ 
+                    "Saturday, July 21st, 2013", 
+                    "San Mateo Event Center",
+                    "2 miles away"
+                  ],
+     "posted"   :  "2013-06-25" 
+                },
+
+
+ "bodyArea" :    { 
+          "description" : "A traditional automotive swap meet for car people, by car people. Over 2,000 vendor spaces. Rod, Classic and Collector Car Corral. Collector Motorcycles Too! Great food. Entry only $8.00. Under 12 free. Tons of parking."
+                 }, 
+
+ "mediaArea"   : [
+                  "http://feed.wildboard.net/sample/norcal-auto-swap-meet.jpg"
+                 ],
+
+ "contactArea" : [  
+                    {
+                      "img"  : "http://feed.wildboard.net/sample/norcal-auto-swap-meet-qr.png", 
+                      "text" : "Saturday, July 21st, 2013 San Mateo Event Center"
+                    }
+                  ]
+  },
+
+  {
+  "id"         : "2",
+  "category"   : ["events","nonprofit"], 
+  "sticky"     : 0,
+  "titleArea"  : { 
+     "title"    :  "Benefit Concert for Japanese Tsunami Recovery",
+     "subtitle" : [ 
+                    "July 13, 2013, 2pm", 
+                    "San Mateo Buddhist Center",
+                    "2 South Claremont Street San Mateo, CA 94401",
+                    "0.5 miles away"
+                  ],
+     "posted"   :  "2013-06-24" 
+                },
+
+      "bodyArea" :    { 
+          "description" : "Benefit Concert for Japanese Tsunami Recovery. The Heart Sutra. An Afternoon of Indian Classical Music and Dance. Come and experience a truly spiritual performance by renowned Japanese dance group Muyuju in their first-ever United States appearance. Toward a new dance expression, the Odissi dance group Muyuju was formed in 2008 by Mayumi Fukushima and Hitomi Kiriyama who are the Odissi dancers. The Hindustani Classical musicians, Go Arai (violin and sitar) and Shiori Ishida (tabla) participated and are part of the company. Their activities began with the performance of volunteers at various welfare facilities.     The characteristic of Muyuju, is that the dancers usually sit on chairs while performing the dance, while singing the Sanskrit song or telling the translated story. This style was born from Mayumi Fukushima's physical handicap. They performed at several places, for example, the Embassy of India, Buddhist temples, Fukushima city where the earthquake affected areas, and so on."
+                 }, 
+
+ "mediaArea"   : [
+                  "http://feed.wildboard.net/sample/tsunami-recovery.jpg"
+                 ],
+
+ "contactArea" : [  
+                    {
+                      "img"  : "http://feed.wildboard.net/sample/tsunami-recovery-qr.png",
+                      "text" : "July 13, 2013, 2:00pm. San Mateo Buddhist Temple. 2 S Claremont St. San Mateo, CA 94401"
+                    }
+                 ]
+  },
+
+  {
+  "id"         : "3",
+  "category"   : ["events"], 
+  "sticky"     : 0,
+  "titleArea"  : { 
+     "title"    :  "San Mateo Harvest Festival",
+     "subtitle" : [ 
+                    "November 15-17, 2013",
+		    "San Mateo Event Center",
+                    "2 miles away"
+                  ],
+     "posted"   :  "2013-06-23" 
+                },
+
+      "bodyArea" :    { 
+          "description" : "San Mateo Harvest Festival: Original Arts and Crafts Show!"
+                 }, 
+
+ "mediaArea"   : [
+                  "http://feed.wildboard.net/sample/sm-harvest.gif"
+                 ],
+
+ "contactArea" : [  
+                    {
+                      "img"  : "http://feed.wildboard.net/sample/sm-harvest.jpg",
+                      "text" : "November 15-17, 2013. San Mateo Event Center, Expo Hall San Mateo County Fairgrounds 1346 Saratoga Dr. San Mateo, CA  94403"
+                    }
+                 ]
+  },
+
+  
+  {
+  "id"         : "4",
+  "category"   : ["events"], 
+  "sticky"     : 0,
+  "titleArea"  : { 
+     "title"    :  "College for Kids",
+     "subtitle" : [ 
+                    "July 8-25, 2013",
+		    "3.5 miles away"
+                  ],
+     "posted"   :  "2013-06-22" 
+                },
+
+      "bodyArea" :    { 
+          "description" : "College for Kids is an award-winning summer camp for children currently in grades fourth through eighth. Celebrating 21 years of fun learning, the academic enrichment program encourages children to explore new subjects and develop their skills through hands-on classes in computers, creative arts, math, sciences, digital media, sports and language arts on our college campuses. July 8-25, Monday-Thursday, 1:30-4:50 pm."
+                 }, 
+
+ "mediaArea"   : [
+                  "http://feed.wildboard.net/sample/college-for-kids.jpg"
+                 ],
+
+ "contactArea" : [  
+                    {
+                      "img"  : "http://feed.wildboard.net/sample/college-for-kids-qr.png",
+                      "text" : "Kanjana Srisupatpongsa; Phone: (650) 574-6149, Email: communityed@smccd.edu"
+                    }
+                 ]
+  },
+
+  {
+  "id"         : "5",
+  "category"   : ["events"], 
+  "sticky"     : 0,
+  "titleArea"  : { 
+     "title"    :  "An Evening with Author Ben Winters",
+     "subtitle" : [ 
+                    "July 17, 2013 7:00pm",
+                    "5.7 miles away"
+                  ],
+     "posted"   :  "2013-06-21" 
+                },
+
+      "bodyArea" :    { 
+          "description" : "Ben H. Winters will read from Countdown City, part 2 of The Last Policeman series, at 7:00 pm on Wednesday, July 17th at the Belmont Library. Countdown City presents another fascinating mystery set on brink of an apocalypse--and once again, Hank Palace confronts questions way beyond 'whodunit.' What do we as human beings owe to one another? And what does it mean to be civilized when civilization is collapsing all around you?"
+                 }, 
+
+ "mediaArea"   : [
+                  "http://feed.wildboard.net/sample/ben-winters.jpg"
+                 ],
+
+ "contactArea" : [  
+                    {
+                      "img"  : "http://feed.wildboard.net/sample/ben-winters-qr.png",
+                      "text" : "Wednesday, 07/17/13 at 7:00 pm, Belmont Public Library"
+                    }
+                 ]
+  },
+
+  {
+  "id"         : "6",
+  "category"   : ["events"], 
+  "sticky"     : 0,
+  "titleArea"  : { 
+     "title"    :  "Russel Bede School Tour",
+     "subtitle" : [ 
+                    "July 15, 2013",
+		    "Free",
+	            "1 mile away"
+                  ],
+     "posted"   :  "2013-06-20" 
+                },
+
+      "bodyArea" :    { 
+          "description" : "Russell Bede School, which has been serving children with learning differences for 30 years, will offer a tour of its facility for interested families. Come see Russell Bede School's home-like environment, learning spaces, garden, indoor and outdoor play areas; and learn more about how this school helps students by tailoring lessons to individual strengths and learning styles. Serving grades 1-6. Please call (650) 579-4400 in advance to reserve a spot."
+                 }, 
+
+ "mediaArea"   : [
+                  "http://feed.wildboard.net/sample/bede.png"
+                 ],
+
+ "contactArea" : [  
+                    {
+                      "img"  : "http://feed.wildboard.net/sample/bede-qr.png",
+                      "text" : " Monday, July 15, 2013, 10:00 AM. 442 Turner Ter, San Mateo CA 94401"
+                    }
+                 ]
+  },
+  
+  {
+  "id"         : "7",
+  "category"   : ["events"], 
+  "sticky"     : 0,
+  "titleArea"  : { 
+     "title"    :  "Walk with a Doc in San Mateo's Central Park",
+     "subtitle" : [ 
+                    "September 7, 2013, 10:00 AM",
+                    "0.2 miles away"
+                  ],
+     "posted"   :  "2013-06-19" 
+                },
+
+      "bodyArea" :    { 
+          "description" : "Walk with a Doc is a FREE program of the San Mateo County Medical Association Community Service Foundation that strives to encourage healthy physical activity in people of all ages. Walk with a Doc provides a walking route and an opportunity for members of the public to enjoy a walk with physician volunteers and to ask physicians questions about general health topics. Walks commence with a free blood pressure check for those walkers who desire it, followed by a 3-minute talk by the physician on the importance of physical activity. THE MEETING SPOT WILL BE AT 5TH AVENUE NEAR THE TENNIS COURTS! "
+                 }, 
+
+ "mediaArea"   : [
+                  "http://feed.wildboard.net/sample/walk-doc.png"
+                 ],
+
+ "contactArea" : [  
+                    {
+                      "img"  : "http://feed.wildboard.net/sample/walk-doc-qr.png",
+                      "text" : "Saturday, September 7, 2013, 10:00 AM. Central Park, 50 E. 5th Avenue, San Mateo"
+                    }
+                 ]
+  },
+
+
+  {
+  "id"         : "8",
+  "category"   : ["nonprofit"], 
+  "sticky"     : 0,
+  "titleArea"  : { 
+     "title"    :  "Bay Area Shakespeare Camp (ages 7-13) in San Mateo",
+     "subtitle" : [ 
+		    "3 miles away"
+                  ],
+     "posted"   :  "2013-06-18" 
+                },
+
+      "bodyArea" :    { 
+          "description" : "Kids get into the act at this summer's Bay Area Shakespeare Camps being held at San Mateo's Odyssey School, 201 Polhemus Road. The 2-week sessions meet weekdays from 9am-3pm with optional aftercare until 5:30 pm. Shakespeare Players Camp for ages 7-13 meets July 8-19. Upstart Crows Camp for ages 12-18 also meets July 8-19 at this location."
+                 }, 
+
+ "mediaArea"   : [
+                  "http://feed.wildboard.net/sample/shakespeare.png"
+                 ],
+
+ "contactArea" : [  
+                    {
+                      "img"  : "http://feed.wildboard.net/sample/shakespeare-qr.png",
+                      "text" : "415-558-0888"
+                    }
+                 ]
+  },
+
+
+  {
+  "id"         : "9",
+  "category"   : ["events","nonprofit"], 
+  "sticky"     : 0,
+  "titleArea"  : { 
+     "title"    :  "School-Force Save the Music Festival, benefitting BRSSD",
+     "subtitle" : [ 
+                    "4.5 miles away"
+                  ],
+     "posted"   :  "2013-06-18" 
+                },
+
+      "bodyArea" :    { 
+          "description" : "Held each year in Belmont's Twin Pines Park, School-Force's Save the Music Festival benefits the Belmont-Redwood Shores School District. Featuring a wide variety of musical performances, the Festival showcases student musicians from Belmont-Redwood Shores and Carlmont High School; the impressive Battle of the Marching Bands; a large children~s area with a wide variety of hands-on activities; and delicious food and beverages from local eateries and gourmet food trucks."
+                 }, 
+
+ "mediaArea"   : [
+                  "http://feed.wildboard.net/sample/save-music.png"
+                 ],
+
+ "contactArea" : [  
+                    {
+                      "img"  : "http://feed.wildboard.net/sample/save-music-qr.png",
+                      "text" : "October 6, 2013, 11:00 AM Twin Pines Park, Belmont"
+                    }
+                 ]
+  },
+
+  {
+  "id"         : "10",
+  "category"   : ["services"],
+  "sticky"     : 0,
+  "titleArea"  : { 
+     "title"    :  "Concierge services for the workplace",
+     "subtitle" : [ 
+                    "Menlo Park"
+                  ],
+     "posted"   :  "2013-06-16" 
+                },
+
+      "bodyArea" :    { 
+          "description" : "Exhaustive studies have shown that employees are far more effective when actually doing their jobs, rather than worrying about the details of their lives. You can set your team free from distraction and give them the ultimate perk by hiring one of our concierges. We will take care of anything that makes your business run more smoothly. We can handle peripheries of the company, like planning events or ordering meals; or work on behalf of your employees to handle their dry cleaning or travel needs. Listing is good for 10 hours of corporate concierge support. Whatever we can do to improve quality of life at your company we'll do!"
+                 }, 
+
+ "mediaArea"   : [
+                  "http://feed.wildboard.net/sample/concierge.jpg"
+                 ],
+
+ "contactArea" : [  
+                    {
+                      "img"  : "http://feed.wildboard.net/sample/concierge-qr.png",
+                      "text" : "Laura Kahn"
+                    }
+                 ]
+  }
+],
+
+"premium" : [
+             {
+              "vastUrl" : "http://localhost/assets/VAST/vast.xml",
+              "refreshRate" : "60"
+             }
+            ],
+
+"news" :   [
+             { 
+                "summary" : "Wildboard unveiled at Kaffeehaus!",
+                "url"  : "http://www.wildboard.net/"
+             }
+           ]
+}
+
+            
+

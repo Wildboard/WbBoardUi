@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VAST version="2.0">
+<Ad id="Adotube">
+<InLine>
+
+<AdSystem version="3.0">Adotube</AdSystem><AdTitle><![CDATA[Adotube]]></AdTitle><Description><![CDATA[]]></Description>
+
+<Impression><![CDATA[http://localhost/grisha/log.php?data=test1]]>
+</Impression>
+<Impression><![CDATA[http://localhost/grisha//log.php?data=test2]]>
+</Impression>
+
+
+<Creatives>
+	<Creative sequence="1" id="oRYYzvQ">
+		<Linear>
+			<Duration>00:00:15</Duration>
+			<TrackingEvents>
+				<Tracking event="firstQuartile"><![CDATA[http://localhost/grisha/log.php?data=video1Q]]></Tracking>
+				<Tracking event="firstQuartile"><![CDATA[http://localhost/grisha/log.php?data=video1Q_twice]]></Tracking>
+				<Tracking event="midpoint"><![CDATA[http://localhost/grisha/log.php?data=videoMidpoint]]></Tracking>
+				<Tracking event="thirdQuartile"><![CDATA[http://localhost/grisha/log.php?data=thirdQuartile]]></Tracking>
+				<Tracking event="complete"><![CDATA[http://localhost/grisha/log.php?data=videoEnd]]></Tracking>
+			</TrackingEvents>
+			<MediaFiles>
+				<MediaFile delivery="progressive" bitrate="512" width="640" height="360" type="video/mp4"><![CDATA[http://creative.js.adotube.com/creatives/dev_test/ppre1_video1_vast.mp4]]></MediaFile>
+				<MediaFile delivery="progressive" bitrate="512" width="640" height="360" type="video/x-flv"><![CDATA[http://creative.js.adotube.com/creatives/dev_test/ppre1_video1_vast.flv]]></MediaFile>
+				<MediaFile delivery="progressive" bitrate="512" width="640" height="360" type="video/webm"><![CDATA[http://creative.js.adotube.com/creatives/dev_test/ppre1_video1_vast.webm]]></MediaFile>
+			</MediaFiles>
+		</Linear>
+	</Creative>
+	<Creative>
+		<CompanionAds required="any">
+			<Companion id="2">
+				<StaticResource  type="image/jpg" width="400" height="160"> 
+						<![CDATA[http://feed.wildboard.net/sample/concierge.jpg]]> 
+				</StaticResource>
+			</Companion>
+		</CompanionAds>
+	</Creative>
+</Creatives>
+
+</InLine>
+</Ad>
+</VAST>
